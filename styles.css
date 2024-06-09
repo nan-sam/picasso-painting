@@ -1,0 +1,125 @@
+/*frame styles*/
+.frame{
+    display: grid;
+    grid-template-rows:  200px 400px 50px ;
+    grid-template-columns:repeat(3, 1fr) 200px;
+   
+
+
+}
+
+
+.frame > *{
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    color: seagreen;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+   
+  
+} 
+
+footer{
+    grid-column: 1/-1;
+}
+
+main{
+    grid-column: 1/4;
+    grid-row: 2/4;
+
+}
+
+aside{
+    grid-column: 4/4;
+    grid-row: 1/4;
+}
+
+/*art styles*/
+.art > *{
+    position: absolute;
+}
+
+.square{
+    background-color: aliceblue;
+    width: 200px;
+    height: 200px;
+    left: 1100px;
+    top: 40px
+   
+}
+
+.halfcircle {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 0%);
+    background: lightblue;
+    top: 20px
+     
+  }
+
+.moon {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 2rem 2rem 0 0 goldenrod;
+    top: 30px
+} 
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 500px solid sandybrown;
+    left: 300px;
+    bottom: 20px;
+    z-index: 50;
+    
+
+
+}
+
+.circle{
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    shape-outside: circle();
+    clip-path: circle();
+    background: rgb(210, 174, 189);
+    left: 450px;
+    top: 0px
+
+}
+
+.innercircle{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    shape-outside: circle();
+    clip-path: circle();
+    background: teal;
+    left: 475px;
+    top: 24px
+
+
+}
+
+.halfcircleright{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 0%);
+    background: red;
+    top: 400px
+     
+  }
